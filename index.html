@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Supplies</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+        <div class="title">
+            <h1>Supply Drop</h1>
+            <p>School supplies for classrooms in your community!</p>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>
+                        <form autocomplete="off" onsubmit="onFormSubmit()">
+                            <div>
+                                <label for="teacherCode">Teacher Code</label>
+                                <input type="text" name="teacherCode" id="teacherCode">
+                            </div>
+                            <div>
+                                <label for="item">Item Name</label>
+                                <input type="text" name="item" id="item">
+                            </div>
+                            <div>
+                                <label for="qty">Quantity</label>
+                                <input type="number" name="qty" id="qty">
+                            </div>
+                            <div>
+                                <label for="perPrice">Price</label>
+                                <input type="number" name="perPrice" id="perPrice">
+                            </div>
+
+                            <div class="form_action--button">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </form>
+
+                        <td>
+                            <table class="list" id="productList">
+                                <thead>
+                                    <tr>
+                                        <th>Teacher Code</th>
+                                        <th>Item Name</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </td>
+                </tr>
+        </div>
+    <script src="./script.js"></script>
+</body>
+</html>
